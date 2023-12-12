@@ -9,6 +9,14 @@ fn main() {
     */
 
     fn fibonacci(n: i32){
-        
+        let mut prev = 0;
+        let mut cur = 1;
+        for _num in 1..n {
+            let a = prev + cur;
+            prev = cur;
+            cur = a;
+        }
+        println!("{cur}");
     }
+    fibonacci(19)
 }
